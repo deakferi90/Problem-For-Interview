@@ -1,0 +1,18 @@
+{
+  "name": "problem-for-interview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start-watch": "npx nodemon src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "jest": "27.5.1"
+  }
+}
