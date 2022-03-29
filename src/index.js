@@ -24,29 +24,7 @@ const getOriginalFromWords = (listOfWords, text) => {
     }
     return final;
   };
-
-  console.log(getOriginalFromWords(["learning", "is", "Feri", "to", "code"], "Feriislearningtocode"));
-
-
-  const multiply = (a, b) => {
-    if (a == undefined || b == undefined) {
-      return null;
-    }
-    if(a == "" || b == "") {
-      return undefined;
-    }
-    return a * b;
-  }
-
-  const sum = (a, b) => {
-    if (a == undefined || b == undefined) {
-      return 0;
-    }
-    return a + b;
-  }
   
   module.exports = {
     getOriginalFromWords,
-    multiply, 
-    sum
   };
