@@ -1,2 +1,2 @@
-# Problem-For-Interview
+# Problem-Solving-For-Interview
 New Repo
