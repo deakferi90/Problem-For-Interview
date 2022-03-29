@@ -6,6 +6,7 @@ const getOriginalFromWords = (listOfWords, text) => {
     let splitedText = text;
     let final = [];
     let i = 0;
+
     while (i < splitedText.length) {
       compareText = compareText + text[i];
       listOfWords.forEach((word) => {
