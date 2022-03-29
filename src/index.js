@@ -28,3 +28,4 @@ const getOriginalFromWords = (listOfWords, text) => {
   module.exports = {
     getOriginalFromWords,
   };
+  
