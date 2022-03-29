@@ -1,4 +1,4 @@
-const { getOriginalFromWords } = require("./index").default;
+const { getOriginalFromWords, multiply, sum } = require("./index");
 
 describe("testing getOriginalFromWords function", () => {
   it("Given the set of words 'quick', 'brown', 'the', 'fox', and the string 'thequickbrownfox', should return ['the', 'quick', 'brown', 'fox'].", () => {
@@ -36,4 +36,28 @@ describe("testing getOriginalFromWords function", () => {
   it("should return an empty array if paramaters are undefined", () => {
     expect(getOriginalFromWords(undefined, undefined)).toEqual([]);
   });
+});
+
+describe("testing for multiply functions", () => {
+  it('should return 6 if 2 and 3 is provided', () => {
+    expect(multiply(2,3)).toEqual(6);
+  })
+});
+
+describe("testing for sum functions", () => {
+  it('should return 5 if 2 and 3 is provided', () => {
+    expect(sum(2,3)).toEqual(5);
+  })
+});
+
+describe("testing for sum functions", () => {
+  it('should return 5 if 2 and 3 is provided', () => {
+    expect(sum(undefined, 3)).toEqual(0);
+  })
+});
+
+describe("testing for sum functions", () => {
+  it('should return 5 if 2 and 3 is provided', () => {
+    expect(sum(2, undefined)).toEqual(0);
+  })
 });

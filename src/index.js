@@ -1,8 +1,7 @@
 const getOriginalFromWords = (listOfWords, text) => {
-    if (listOfWords === undefined || text === undefined && text == "") {
+    if (listOfWords === undefined || text === undefined || text == "") {
       return [];
     }
-    //if (text == "") return [];
     let compareText = "";
     let splitedText = text;
     let final = [];
@@ -14,7 +13,7 @@ const getOriginalFromWords = (listOfWords, text) => {
           final.push(compareText);
           const splitted = splitedText.split(word)[1];
           const filteredElments = listOfWords.filter(
-            (element) => element != word
+            (element) => console.log(element != word)
           );
           const returnedWords = getOriginalFromWords(filteredElments, splitted);
           final.push(...returnedWords);
@@ -25,7 +24,29 @@ const getOriginalFromWords = (listOfWords, text) => {
     }
     return final;
   };
+
+  console.log(getOriginalFromWords(["learning", "is", "Feri", "to", "code"], "Feriislearningtocode"));
+
+
+  const multiply = (a, b) => {
+    if (a == undefined || b == undefined) {
+      return null;
+    }
+    if(a == "" || b == "") {
+      return undefined;
+    }
+    return a * b;
+  }
+
+  const sum = (a, b) => {
+    if (a == undefined || b == undefined) {
+      return 0;
+    }
+    return a + b;
+  }
   
-  export default {
+  module.exports = {
     getOriginalFromWords,
+    multiply, 
+    sum
   };
