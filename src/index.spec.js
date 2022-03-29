@@ -1,4 +1,4 @@
-const { getOriginalFromWords, multiply, sum } = require("./index");
+const { getOriginalFromWords } = require("./index");
 
 describe("testing getOriginalFromWords function", () => {
   it("Given the set of words 'quick', 'brown', 'the', 'fox', and the string 'thequickbrownfox', should return ['the', 'quick', 'brown', 'fox'].", () => {

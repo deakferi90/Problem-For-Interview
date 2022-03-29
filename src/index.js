@@ -24,6 +24,8 @@ const getOriginalFromWords = (listOfWords, text) => {
     }
     return final;
   };
+
+  getOriginalFromWords(['quick', 'brown', 'the', 'fox'], 'thequickbrownfox');
   
   module.exports = {
     getOriginalFromWords,
