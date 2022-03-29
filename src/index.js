@@ -13,7 +13,7 @@ const getOriginalFromWords = (listOfWords, text) => {
           final.push(compareText);
           const splitted = splitedText.split(word)[1];
           const filteredElments = listOfWords.filter(
-            (element) => console.log(element != word)
+            (element) => element != word
           );
           const returnedWords = getOriginalFromWords(filteredElments, splitted);
           final.push(...returnedWords);
@@ -28,4 +28,4 @@ const getOriginalFromWords = (listOfWords, text) => {
   module.exports = {
     getOriginalFromWords,
   };
-  
+
