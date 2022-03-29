@@ -16,11 +16,11 @@ describe("testing getOriginalFromWords function", () => {
     ).toEqual(["bed", "bath", "and", "beyond"]);
   });
 
-  it("Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string 'thefoxisnothere', should return [].", () => {
+  it("Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string '', should return [].", () => {
     expect(
       getOriginalFromWords(
         ["bed", "bath", "bedbath", "and", "beyond"],
-        "bedbathandbeyond"
+        ""
       )
     ).toEqual([]);
   });
