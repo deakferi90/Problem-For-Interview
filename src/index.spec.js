@@ -20,7 +20,7 @@ describe("testing getOriginalFromWords function", () => {
     expect(
       getOriginalFromWords(
         ["bed", "bath", "bedbath", "and", "beyond"],
-        "thefoxisnothere"
+        "bedbathandbeyond"
       )
     ).toEqual([]);
   });
